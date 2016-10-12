@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChildTreeTableViewCell" customModule="TreeUI" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChildTreeTableViewCell" rowHeight="45" id="Xny-FV-9i1" customClass="ChildTreeTableViewCell" customModule="TreeUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xny-FV-9i1" id="7lO-J9-Xeg">
+                <frame key="frameInset" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XUJ-Nc-88K"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tam Nguyen Test" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUL-sF-C6x">
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="$10000" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5b1-J8-296">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="V6G-U8-dHi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" red="0.27058823529999998" green="0.63921568630000003" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TUL-sF-C6x" firstAttribute="height" secondItem="XUJ-Nc-88K" secondAttribute="height" id="FzH-24-1Pz"/>
+                    <constraint firstItem="5b1-J8-296" firstAttribute="leading" secondItem="TUL-sF-C6x" secondAttribute="trailing" constant="5" id="GvO-Mc-9rB"/>
+                    <constraint firstItem="5b1-J8-296" firstAttribute="centerY" secondItem="XUJ-Nc-88K" secondAttribute="centerY" id="Mz9-Qn-w4V"/>
+                    <constraint firstItem="XUJ-Nc-88K" firstAttribute="centerY" secondItem="7lO-J9-Xeg" secondAttribute="centerY" id="Sag-LZ-Bin"/>
+                    <constraint firstItem="TUL-sF-C6x" firstAttribute="centerY" secondItem="XUJ-Nc-88K" secondAttribute="centerY" id="TRn-A6-aYm"/>
+                    <constraint firstItem="5b1-J8-296" firstAttribute="height" secondItem="XUJ-Nc-88K" secondAttribute="height" id="Vhm-KB-JN5"/>
+                    <constraint firstItem="XUJ-Nc-88K" firstAttribute="height" secondItem="7lO-J9-Xeg" secondAttribute="height" multiplier="0.875" id="cAR-3Y-34l"/>
+                    <constraint firstItem="TUL-sF-C6x" firstAttribute="leading" secondItem="XUJ-Nc-88K" secondAttribute="trailing" constant="10" id="h6i-T5-m9R"/>
+                    <constraint firstAttribute="trailing" secondItem="5b1-J8-296" secondAttribute="trailing" constant="10" id="ktg-Qn-Dva"/>
+                    <constraint firstItem="XUJ-Nc-88K" firstAttribute="leading" secondItem="7lO-J9-Xeg" secondAttribute="leading" constant="10" id="qRq-ju-POw"/>
+                    <constraint firstItem="XUJ-Nc-88K" firstAttribute="width" secondItem="XUJ-Nc-88K" secondAttribute="height" multiplier="1:1" id="s4c-hH-Qqe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImageview" destination="XUJ-Nc-88K" id="TdX-LL-BEO"/>
+                <outlet property="moneyLabel" destination="5b1-J8-296" id="jA6-Se-2ov"/>
+                <outlet property="nameLabel" destination="TUL-sF-C6x" id="ROR-DJ-egU"/>
+            </connections>
+            <point key="canvasLocation" x="233" y="196.5"/>
+        </tableViewCell>
+    </objects>
+</document>
