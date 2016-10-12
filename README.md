@@ -2,64 +2,55 @@
 Read me: EzyTreeView: Three level
 Using storyboard/nib or init with frame
 Set customer class of UIView is EzyTreeView
-Model: must have a variable isExpand.
 
 EzyTreeView
 - TableView
-- TreeTableViewCell
-- SubTreeTableViewCell
-- ChildTreeTableViewCell
-- ChildTreeTableViewCell: if no child
-- ChildTreeTableViewCell: if no child
+    - TreeTableViewCell
+        - SubTreeTableViewCell
+            - ChildTreeTableViewCell
+        - ChildTreeTableViewCell: if no child
+    - ChildTreeTableViewCell: if no child
 
 EzyTreeView	
 // Color vertical line root cell (TreeTableViewCell)
-var baseVerticalLineColor: UIColor		// màu line dọc ở cell ngoài cùng base
+var baseVerticalLineColor: UIColor		// base vertical line
 // Color vertical line sub cell (SubTreeTableViewCell)
-var subBaseVerticalLineColor: UIColor	// màu line dọc ở cell cấp thứ 2
+var subBaseVerticalLineColor: UIColor	// sub base vertical line
 
 // Font for title label root cell
-var mainTitleRootFont: UIFont			// Font của title label cell ngoài cùng
+var mainTitleRootFont: UIFont			// Font of title label base cell
 // Color for title label root cell
-var mainTitleRootColor: UIColor			// Màu của title label cell ngoài cùng
+var mainTitleRootColor: UIColor			// Color of title label base cell
 
 // Font for value label root cell
-var mainValueRootFont: UIFont			// Font của value label cell ngoài cùng
+var mainValueRootFont: UIFont			// Font of value label base cell
 
 // Color for value label root cell
-var mainValueRootColor: UIColor			// Màu của value label cell ngoài cùng
+var mainValueRootColor: UIColor			// Color of value label base cell
 
 // Font for title label root cell
-var mainTitleSubRootFont: UIFont		// Font của title label cell cấp thứ 2
+var mainTitleSubRootFont: UIFont		// Font of title label sub base cell
 
 // Color for title label root cell
-var mainTitleSubRootColor: UIColor		// Màu của title label cell cấp thứ 2
+var mainTitleSubRootColor: UIColor		// Color of title label cell sub base cell
 
 // Font for value label root cell
-var mainValueSubRootFont: UIFont		// Font của value label cell cấp thứ 2
+var mainValueSubRootFont: UIFont		// Font of value label sub base cell
 
 // Color for value label root cell
-var mainValueSubRootColor: UIColor		// Màu của value label cell cấp thứ 2
+var mainValueSubRootColor: UIColor		// Color of value label sub base cell
 
 // Font for title label root cell
-var mainTitleDetailFont: UIFont			// Font của title label cell cấp thứ 3
+var mainTitleDetailFont: UIFont			// Font of title label detail sub base cell
 
 // Color for title label root cell		
-var mainTitleDetailColor: UIColor		// Màu của title label cell cấp thứ 3
+var mainTitleDetailColor: UIColor		// Color of title label detail sub base cell
 
 // Font for value label root cell
-var mainValueDetailFont: UIFont			// Font của value label cell cấp thứ 3
+var mainValueDetailFont: UIFont			// Font of value label detail sub base cell
 
 // Color for value label root cell
-var mainValueDetailColor: UIColor		// Màu của value label cell cấp thứ 3
+var mainValueDetailColor: UIColor		// Color of value label detail sub base cell
 
 // Data Source
 dataSource: Data cho tableview
-
-TreeTableViewCell:
-// Khi touch vào Title label sẽ nhận được sự kiện ở hàm expandButtonPressed trong class TreeTableViewCell
-// khi đó sẽ post 1 notification để bên ngoài bắt và handle việc reload lại tableview
-
-SubTreeTableViewCell
-// Khi touch vào Title label sẽ nhận được sự kiện ở hàm expandButtonPressed trong class SubTreeTableViewCell
-// khi đó sẽ post 1 notification để bên ngoài bắt và handle việc reload lại tableview
