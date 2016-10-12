@@ -1,7 +1,13 @@
 # TreeView
+
+<p align="center">
+<img src=""
+alt="GitHub license"/>
+
 Read me: EzyTreeView: Three level
 Using storyboard/nib or init with frame
 Set customer class of UIView is EzyTreeView
+
 
 EzyTreeView
 - TableView
@@ -52,5 +58,4 @@ var mainValueDetailFont: UIFont			// Font of value label detail sub base cell
 // Color for value label root cell
 var mainValueDetailColor: UIColor		// Color of value label detail sub base cell
 
-// Data Source
-dataSource: Data cho tableview
+Video Demo: https://youtu.be/-AK3QY38nMs
